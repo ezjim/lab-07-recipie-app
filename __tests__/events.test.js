@@ -1,24 +1,24 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 // const request = require('supertest');
 // const app = require('../lib/app');
-const connect = require('../lib/utils/connect');
-const mongoose = require('mongoose');
+// const connect = require('../lib/utils/connect');
+// const mongoose = require('mongoose');
 // const Event = require('../lib/models/Event');
 
-describe('event routes', () => {
-  beforeAll(() => {
-    connect();
-  });
+// describe('event routes', () => {
+//   beforeAll(() => {
+//     connect();
+//   });
 
-  beforeEach(() => {
-    return mongoose.connection.dropDatabase();
-  });
+//   beforeEach(() => {
+//     return mongoose.connection.dropDatabase();
+//   });
 
-  afterAll(() => {
-    return mongoose.connection.close();
-  });
-});
+//   afterAll(() => {
+//     return mongoose.connection.close();
+//   });
+// });
 
 //   it('creates an event', () => {
 //     return request(app)
