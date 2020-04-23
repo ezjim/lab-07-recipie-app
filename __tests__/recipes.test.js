@@ -52,24 +52,24 @@ describe('recipe routes', () => {
       });
   });
 
-  it('gets all recipes', async() => {
-    const recipes = await Recipe.create([
-      { name: 'cookies', directions: [] },
-      { name: 'cake', directions: [] },
-      { name: 'pie', directions: [] }
-    ]);
+  // it('gets all recipes', async() => {
+  //   const recipes = await Recipe.create([
+  //     { name: 'cookies', directions: [] },
+  //     { name: 'cake', directions: [] },
+  //     { name: 'pie', directions: [] }
+  //   ]);
 
-    return request(app)
-      .get('/api/v1/recipes')
-      .then(res => {
-        recipes.forEach(recipe => {
-          expect(res.body).toContainEqual({
-            _id: recipe._id.toString(),
-            name: recipe.name
-          });
-        });
-      });
-  });
+  //   return request(app)
+  //     .get('/api/v1/recipes')
+  //     .then(res => {
+  //       recipes.forEach(recipe => {
+  //         expect(res.body).toContainEqual({
+  //           _id: recipe._id.toString(),
+  //           name: recipe.name
+  //         });
+  //       });
+  //     });
+  // });
 
   // it('gets a recipe by id', async() => {
   //   const recipe = await Recipe.create({
